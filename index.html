@@ -245,10 +245,13 @@
     <!--Contact Section Design-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
             <div class="input-box">
+                
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="hidden" name="access_key" value="64258886-fac1-4a8d-bbf4-3ef773c0e52a">
+                    <input type="text" name="name" placeholder= "Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
@@ -260,18 +263,18 @@
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" placeholder= "Mobile Number" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" name="email" placeholder= "Email Subject" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
 
                 <span class="animate scroll" style="--i:7;"></span>
@@ -297,7 +300,7 @@
 
         </div>
     </footer>
-
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>
